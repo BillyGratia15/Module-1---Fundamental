@@ -1,0 +1,59 @@
+Kamis, 25 April 2019
+
+https://shopee.co.id/search?keyword=tamiya --> contoh request argumen (?keyword=tamiya)
+
+cara ngeliat kode awal yg ditulis di dalam suatu file py: versioning control
+git-scm.com (untuk ngeliat kode pertama, versi kedua, ketiga, dst) --> download&install
+
+cek git di terminal: git --version 
+
+di cmd:
+git config --global user.name RiantoWibisono
+
+git config --global user.email albertusrian95@gmail.com
+
+utk ngecek udh bener atau blm:
+git config user.name
+git config user.email
+
+savenya di git juga pake 'git init' --> bakal muncul folder .git hidden 
+git status --> no commit yet (blm ada checkpoint apapun) --> untuk ngecek status file yg awal
+ngapus fitur git tinggal hapus folder git yg hidden itu
+cara staging (sbg sebuah 'rak' untuk di =commit?)
+    git add <nama file>
+    git add .           --> memindahkan semua folder ke dalam staging area
+nambahin commit:
+    git commit -m "ini kode pertamaku" (sbg comment)            --> memindahkan semau staging area ke rak
+
+munculin catatan commit:
+    git log
+
+utk melihat ada brp commit:
+    git log --oneline =====> kode di depan adlh commit id
+
+cek out:
+kembali ke commit pertama:         
+    git checkout commitID
+
+kembali ke yg terakhir:
+    git checkout master
+
+misal pingin kmbl ke commit ke dua dan ngilangin commit ke 3 dan ke 4:
+    git reset <commitID> --hard
+    kalau 'git reset commitID' aja nanti commit ketiga dan keempat ilang tp filenya masih ad
+
+U - untracked
+A - added
+M - commit
+
+folder yg udh dikasih git --> git repository
+
+
+dari github buat ngupload repository?
+git remote add origin https://github.com/RiantoWibisono/tes-github.git
+git push origin master
+
+lgsg push file baru ke github:
+setelah di commit, lgsg git push origin master
+
+buat download repo orang selain download zip bisa aja git clone <link repo org>
